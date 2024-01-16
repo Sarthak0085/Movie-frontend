@@ -30,7 +30,7 @@ const Home = () => {
             toast.error(isError || randomError || topRatedError);
         }
 
-    }, [dispatch]);
+    }, []);
 
 
     return (

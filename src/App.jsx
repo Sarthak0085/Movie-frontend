@@ -50,7 +50,7 @@ function App() {
       dispatch({ type: "LIKE_MOVIE_RESET" })
     }
 
-  }, [dispatch, userInfo, isError, catError, isSuccess])
+  }, [])
 
   return (
     <ScrollOnTop>

@@ -1,5 +1,5 @@
 import * as categoryConstants from "../constants/categoryConstants";
-import * as categoryApis from "../APIs/CategoriesServices"
+import * as categoryApis from "../APIs/categoriesServices"
 import { ErrorsAction, tokenProtection } from "../protection";
 import { toast } from "react-toastify";
 

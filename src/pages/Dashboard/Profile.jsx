@@ -11,7 +11,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { UpdateProfileValidation } from "../../components/Validation/UserValidation";
 import { deleteProfileAction, updateProfileAction } from "../../redux/actions/userAction";
 import ImagePreview from "../../components/ImagePreview";
-import ConfirmationModal from "../../components/Modals/ConfirmationModal";
+// import ConfirmationModal from "../../components/Modals/ConfirmationModal";
 
 const Profile = () => {
     const dispatch = useDispatch();
@@ -22,7 +22,7 @@ const Profile = () => {
     const { isLoading: DeleteLoading, isSuccess: DeleteSuccess, isError: DeleteError } = useSelector((state) => state.deleteUserProfile);
 
     const [imageUrl, setImageUrl] = useState(userInfo?.user?.image);
-    const [open, setOpen] = useState(false);
+    // const [open, setOpen] = useState(false);
 
 
 
@@ -79,7 +79,7 @@ const Profile = () => {
 
     return (
         <>
-            <ConfirmationModal setOpen={setOpen} handleDelete={deleteProfile} isLoading={DeleteLoading} />
+            {/* <ConfirmationModal setOpen={setOpen} handleDelete={deleteProfile} isLoading={DeleteLoading} /> */}
             <Sidebar>
                 <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-6">
                     <h2 className="text-xl font-bold">Update Profile</h2>

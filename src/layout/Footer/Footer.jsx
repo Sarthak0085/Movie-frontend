@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Links = [
@@ -94,11 +93,11 @@ const Footer = () => {
           }
           <div className='pb-3.5 px-auto lg:pb-0 mx-auto items-center justify-center col-span-1 md:col-span-2 lg:col-span-3'>
             <Link to="/">
-              <img src='logp.png' alt="logo" className='w-2/4 object-contain h-12'/>
+              <img src='logp.png' alt="logo" className='w-2/4 object-contain h-12' />
             </Link>
-            <div className='leading-7 text-sm text-border mt-3'> 
+            <div className='leading-7 text-sm text-border mt-3'>
               <span className='block'>
-                Lorem colony Near shiv Mandir  <br/> Bangolore , India
+                Lorem colony Near shiv Mandir  <br /> Bangolore , India
               </span>
               <span className='block'>
                 Tel: +12 292002-121202

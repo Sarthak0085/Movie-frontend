@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom"
+import PropTypes from "prop-types";
 
-const ScrollOnTop = (props) => {
+const ScrollOnTop = ({ children }) => {
 
     const location = useLocation();
     useEffect(() => {
@@ -11,10 +12,14 @@ const ScrollOnTop = (props) => {
     return (
         <>
             {
-                props.children
+                children
             }
         </>
     )
 }
+
+ScrollOnTop.propTypes = {
+    children: PropTypes.node.isRequired,
+};
 
 export default ScrollOnTop

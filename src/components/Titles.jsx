@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const Titles = ({ title, Icon }) => {
   return (
     <div className='w-full flex sm:gap-8 gap-4 items-center'>
@@ -6,5 +8,10 @@ const Titles = ({ title, Icon }) => {
     </div>
   )
 }
+
+Titles.propTypes = {
+  title: PropTypes.string.isRequired,
+  Icon: PropTypes.element.isRequired,
+};
 
 export default Titles

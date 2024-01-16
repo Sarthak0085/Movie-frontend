@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { FiDownload, FiEdit } from 'react-icons/fi';
 import { GoEye } from "react-icons/go";
 import { Link } from 'react-router-dom';

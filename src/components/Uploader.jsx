@@ -4,6 +4,7 @@ import { FiUploadCloud } from 'react-icons/fi'
 import Loader from './Notification/Loader';
 import { uploadImageService } from '../redux/APIs/uploadImageService';
 import { toast } from 'react-toastify';
+import PropTypes from "prop-types";
 
 const Uploader = ({ setImageUrl }) => {
 
@@ -66,5 +67,9 @@ const Uploader = ({ setImageUrl }) => {
         </div>
     )
 }
+
+Uploader.propTypes = {
+    setImageUrl: PropTypes.func.isRequired,
+};
 
 export default Uploader

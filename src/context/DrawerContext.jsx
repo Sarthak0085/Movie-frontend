@@ -1,5 +1,5 @@
 import { createContext, useMemo, useState } from "react";
-
+import PropTypes from "prop-types";
 
 export const SidebarContext = createContext();
 
@@ -13,8 +13,12 @@ function DrawerContext({ children }) {
         [progress, mobileDrawer]);
 
     return (
-        <SidebarContext.Provider value= { value } > { children } </SidebarContext.Provider>
+        <SidebarContext.Provider value={value} > {children} </SidebarContext.Provider>
     )
 }
+
+DrawerContext.propTypes = {
+    children: PropTypes.node.isRequired,
+};
 
 export default DrawerContext;

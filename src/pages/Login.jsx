@@ -98,7 +98,7 @@ const LoginPage = () => {
                         <FiLogIn /> Login
                     </button>
                     <p className="text-center text-border">
-                        Don't have an Account? <Link to={"/register"} className="text-dryGray font-semibold ml-2">Sign Up &rarr;</Link>
+                        Don&apos;t have an Account? <Link to={"/register"} className="text-dryGray font-semibold ml-2">Sign Up &rarr;</Link>
                     </p>
                 </form>
             </div>

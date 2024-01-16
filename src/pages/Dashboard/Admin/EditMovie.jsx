@@ -119,7 +119,7 @@ const EditMovie = () => {
                     ) :
                     (
                         <div className="flex flex-col gap-6">
-                            <h2 className="text-xl font-bold">Edit "{movie?.name}"</h2>
+                            <h2 className="text-xl font-bold">Edit &quot;{movie?.name}&quot;</h2>
                             <div className="w-full grid md:grid-cols-2 gap-6">
                                 {/* Movie Title  */}
                                 <div className="w-full">

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { FiEdit } from 'react-icons/fi';
 import { MdEmail } from "react-icons/md";
 import moment from "moment";

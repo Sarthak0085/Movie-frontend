@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useState } from 'react';
 import { AiFillDelete } from 'react-icons/ai';
 import { FaCirclePlus } from "react-icons/fa6";

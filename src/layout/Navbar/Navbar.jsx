@@ -32,7 +32,9 @@ const Navbar = () => {
       <div className='container mx-auto py-6 px-8 gap-10 lg:grid grid-cols-7 justify-between items-center'>
         <div className='col-span-1 lg:block hidden'>
           <Link to={"/"}>
-            <img src='logo.png' alt="logo" className='w-full h-12 object-contain' />
+            <h2 className="text-2xl font-bold text-subMain shadow-xl line-through">
+              CinéCraze
+            </h2>
           </Link>
         </div>
         {/* Search form */}

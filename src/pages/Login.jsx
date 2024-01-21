@@ -55,11 +55,9 @@ const LoginPage = () => {
         <Layout>
             <div className="container mx-auto px-2 my-24 flex-column">
                 <form onSubmit={handleSubmit(onSubmit)} className="w-full 2xl:w-2/5 gap-8 flex flex-col justify-center p-8 sm:p-14 md:w-3/5 bg-dry rounded-lg border border-border">
-                    <img
-                        src="1.jpg"
-                        alt="logo"
-                        className="w-full h-12 object-contain"
-                    />
+                    <h2 className="text-5xl font-bold text-center text-subMain shadow-xl line-through">
+                        CinéCraze
+                    </h2>
                     <div className="w-full">
                         <Input
                             type="email"

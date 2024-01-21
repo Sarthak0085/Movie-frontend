@@ -10,7 +10,7 @@ const Chat = ({ movieId, user }) => {
     const chatContainerRef = useRef();
 
     useEffect(() => {
-        const newSocket = io('https://movie-server-hheg.onrender.com');
+        const newSocket = io('https://movie-backend-z5dl.onrender.com');
 
         newSocket.on('connect', () => {
             console.log('Connected to the server');

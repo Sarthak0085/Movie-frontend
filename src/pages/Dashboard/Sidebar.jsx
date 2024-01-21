@@ -19,7 +19,7 @@ const Sidebar = ({ children }) => {
 
     const logout = () => {
         dispatch(logoutAction());
-        navigate("/login");
+        navigate("/");
         toast.success("Logged out successful");
         window.location.reload();
     }
@@ -90,7 +90,7 @@ const Sidebar = ({ children }) => {
     const active = "bg-dryGray text-subMain";
     const hover = "hover:text-white hover:bg-main";
     const inActive = "rounded font-medium text-sm transitions flex gap-3 items-center p-4";
-    const Hover = (isActive) => isActive ? `${active} ${inActive}` : `${hover} ${inActive}`;
+    const Hover = ({ isActive }) => isActive ? `${active} ${inActive}` : `${hover} ${inActive}`;
 
     return (
         <Layout>

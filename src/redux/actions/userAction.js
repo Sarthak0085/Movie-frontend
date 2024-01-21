@@ -3,14 +3,13 @@ import * as userApis from "../APIs/userServices";
 import { ErrorsAction, tokenProtection } from "../protection";
 import { toast } from "react-toastify";
 
-
-
 //login action
 export const registerAction = (data) => async (dispatch) => {
     try {
         dispatch({ type: userConstants.USER_REGISTER_REQUEST });
         const response = await userApis.registerService(data);
         dispatch({ type: userConstants.USER_REGISTER_SUCCESS, payload: response });
+        toast.success("Registration Successful. Please login to access now.")
         // dispatch({ type: userConstants.USER_LOGIN_SUCCESS, payload: response });
     } catch (error) {
         ErrorsAction(error, dispatch, userConstants.USER_REGISTER_FAIL);

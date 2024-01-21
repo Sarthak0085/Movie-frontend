@@ -28,29 +28,29 @@ const Contact = () => {
         }
     ]
 
-  return (
-      <Layout>
-          <div className="min-h-screen container mx-auto px-2 my-6">
-              <Head title="About Us" />
-              <div className="grid md:grid-cols-2 gap-6 lg:mt-20 mt-10 lg:grid-cols-3 xl:gap-8">
-                  {
-                      contactData.map((item) => (
-                          <div key={item.id} className="border border-border flex-column p-10 bg-dry rounded-lg text-center">
-                              <span className="flex-column w-20 mb-4 h-20 rounded-full bg-main text-subMain text-2xl">
-                                  {item.icon}
-                              </span>
-                              <h5 className="text-xl font-semibold mb-2">{item.title}</h5>
-                              <p className="mb-0 text-text text-sm leading-7">
-                                  <a href={`mailto:${item.contact}`} className="text-blue-600 pr-2">{item.contact}</a>
-                                  {item.info}
-                              </p>
-                          </div>
-                      ))
-                 }
-              </div>
-          </div>
-    </Layout>
-  )
+    return (
+        <Layout>
+            <div className="min-h-screen container mx-auto px-2 my-6">
+                <Head title="Contact Us" />
+                <div className="grid md:grid-cols-2 gap-6 lg:mt-20 mt-10 lg:grid-cols-3 xl:gap-8">
+                    {
+                        contactData.map((item) => (
+                            <div key={item.id} className="border border-border flex-column p-10 bg-dry rounded-lg text-center">
+                                <span className="flex-column w-20 mb-4 h-20 rounded-full bg-main text-subMain text-2xl">
+                                    {item.icon}
+                                </span>
+                                <h5 className="text-xl font-semibold mb-2">{item.title}</h5>
+                                <p className="mb-0 text-text text-sm leading-7">
+                                    <a href={`mailto:${item.contact}`} className="text-blue-600 pr-2">{item.contact}</a>
+                                    {item.info}
+                                </p>
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
+        </Layout>
+    )
 }
 
 export default Contact
